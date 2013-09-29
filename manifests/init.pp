@@ -6,6 +6,6 @@
 class limechat {
   package { 'LimeChat':
     provider => 'compressed_app',
-    source   => 'http://cloud.github.com/downloads/psychs/limechat/LimeChat_2.33a.tbz',
+    source   => 'http://surfnet.dl.sourceforge.net/project/limechat/limechat/LimeChat_2.37.tbz',
   }
 }
