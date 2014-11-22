@@ -4,10 +4,11 @@
 #
 #  include limechat
 class limechat(
+  $url_base = 'http://surfnet.dl.sourceforge.net/project/limechat/limechat',
   $version = '2.42',
 ){
   package { 'LimeChat':
     provider => 'compressed_app',
-    source   => "http://surfnet.dl.sourceforge.net/project/limechat/limechat/LimeChat_${$version}.tbz",
+    source   => "${url_base}/LimeChat_${$version}.tbz",
   }
 }
