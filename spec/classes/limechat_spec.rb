@@ -8,14 +8,14 @@ describe 'limechat' do
 
   context 'with no parameters' do
     it_behaves_like 'it installs limechat'
-    it { should contain_package('LimeChat').with_source('http://surfnet.dl.sourceforge.net/project/limechat/limechat/LimeChat_2.42.tbz') }
+    it { should contain_package('LimeChat').with_source('http://downloads.sourceforge.net/project/limechat/limechat/LimeChat_2.42.tbz') }
   end
 
   context 'with a version' do
     let(:params) { { :version => '3.00' } }
 
     it_behaves_like 'it installs limechat'
-    it { should contain_package('LimeChat').with_source('http://surfnet.dl.sourceforge.net/project/limechat/limechat/LimeChat_3.00.tbz') }
+    it { should contain_package('LimeChat').with_source('http://downloads.sourceforge.net/project/limechat/limechat/LimeChat_3.00.tbz') }
   end
 
   context 'with a URL base' do

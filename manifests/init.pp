@@ -4,7 +4,7 @@
 #
 #  include limechat
 class limechat(
-  $url_base = 'http://surfnet.dl.sourceforge.net/project/limechat/limechat',
+  $url_base = 'http://downloads.sourceforge.net/project/limechat/limechat',
   $version = '2.42',
 ){
   package { 'LimeChat':
