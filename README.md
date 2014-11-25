@@ -8,6 +8,18 @@ Install [LimeChat](http://limechat.net/mac/), an IRC client for Mac OS X.
 include limechat
 ```
 
+You can specify a version:
+
+``` puppet
+class { 'limechat': version => '3.00' }
+```
+
+...or in Hiera...
+
+``` yaml
+limechat::version: '3.00'
+```
+
 ## Required Puppet Modules
 
 * `boxen`

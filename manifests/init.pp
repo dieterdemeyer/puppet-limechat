@@ -3,9 +3,12 @@
 # Examples
 #
 #  include limechat
-class limechat {
+class limechat(
+  $url_base = 'http://downloads.sourceforge.net/project/limechat/limechat',
+  $version = '2.42',
+){
   package { 'LimeChat':
     provider => 'compressed_app',
-    source   => 'http://surfnet.dl.sourceforge.net/project/limechat/limechat/LimeChat_2.37.tbz',
+    source   => "${url_base}/LimeChat_${$version}.tbz",
   }
 }
